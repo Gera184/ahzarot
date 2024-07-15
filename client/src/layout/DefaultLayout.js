@@ -22,9 +22,9 @@ const DefaultLayout = () => {
     <div>
       <AppSidebar navigation={formattedNavs} language={language} />
       <div className="wrapper d-flex flex-column min-vh-100">
-        <AppHeader routes={routes} texts={selectedLanguageTexts} />
+        <AppHeader routes={routes} texts={selectedLanguageTexts} language={language} />
         <div className="body flex-grow-1">
-          <AppContent routes={routes} texts={selectedLanguageTexts} />
+          <AppContent routes={routes} texts={selectedLanguageTexts} language={language} />
         </div>
         <AppFooter texts={selectedLanguageTexts} />
       </div>

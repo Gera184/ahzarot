@@ -19,11 +19,11 @@ import { cifIl, cifUs, cilContrast, cilGlobeAlt, cilMenu, cilMoon, cilSun } from
 import { setLanguage, setSidebarShow } from '../../redux/reducers/appSlice'
 import { AppBreadcrumb } from '../index'
 
-const AppHeader = ({ routes, texts }) => {
-  const { colorMode, setColorMode } = useColorModes('coreui-free-react-admin-template-theme')
+const AppHeader = ({ routes, texts, language }) => {
+  const direction = language === 'he' ? 'end' : 'start'
 
+  const { colorMode, setColorMode } = useColorModes('coreui-free-react-admin-template-theme')
   const sidebarShow = useSelector((state) => state.app.sidebarShow)
-  const language = useSelector((state) => state.app.language)
 
   const headerRef = useRef()
   const dispatch = useDispatch()
@@ -138,7 +138,7 @@ const AppHeader = ({ routes, texts }) => {
           </li>
         </CHeaderNav>
       </CContainer>
-      <CContainer className="px-4" fluid>
+      <CContainer className={`px-4 d-flex justify-content-${direction}`} fluid>
         <AppBreadcrumb routes={routes} language={language} />
       </CContainer>
     </CHeader>

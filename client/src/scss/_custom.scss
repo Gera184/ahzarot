@@ -7,3 +7,16 @@
   margin-left: 0 !important;
   margin-right: auto !important;
 }
+
+.content_wrapper_rtl {
+  direction: rtl;
+}
+.content_wrapper_ltr {
+  direction: ltr;
+}
+
+.body {
+  background-image: url(https://yp-pitronot.co.il/wp-content/uploads/2022/06/img1.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}

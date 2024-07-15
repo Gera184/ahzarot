@@ -14,6 +14,33 @@
         "auto": "Auto"
       }
     },
+    "home": {
+      "title": "The official return organization",
+      "form": {
+        "title": "You will be surprised how much money is waiting for you!",
+        "inputs": [
+          {
+            "label": "Full name",
+            "type": "text",
+            "placeholder": "Full name",
+            "required": true
+          },
+          {
+            "label": "Email",
+            "type": "email",
+            "placeholder": "Email (not required)",
+            "required": false
+          },
+          {
+            "label": "Phone",
+            "type": "text",
+            "placeholder": "Phone",
+            "required": true
+          }
+        ],
+        "button": "Send"
+      }
+    },
     "footer": {
       "email": "gytbsupp0rt@gmail.com",
       "phone": "0732187410"
@@ -32,6 +59,33 @@
         "light": "בהיר",
         "dark": "כהה",
         "auto": "אוטומטי"
+      }
+    },
+    "home": {
+      "title": "ארגון ההחזרות הרשמי",
+      "form": {
+        "title": "אתם תופתעו כמה כסף מחכה לכם!",
+        "inputs": [
+          {
+            "label": "שם מלא",
+            "type": "text",
+            "placeholder": "שם מלא",
+            "required": true
+          },
+          {
+            "label": "אימייל",
+            "type": "email",
+            "placeholder": "אימייל (לא חובה)",
+            "required": false
+          },
+          {
+            "label": "טלפון",
+            "type": "text",
+            "placeholder": "טלפון",
+            "required": true
+          }
+        ],
+        "button": "שלח"
       }
     },
     "footer": {
