@@ -1,0 +1,233 @@
+[
+  {
+    "path": "/",
+    "exact": true,
+    "name": { "en": "Home", "he": "בית" }
+  },
+  {
+    "path": "/home",
+    "name": { "en": "Home", "he": "בית" },
+    "element": "Home"
+  },
+  {
+    "path": "/theme",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Colors",
+    "exact": true
+  },
+  {
+    "path": "/theme/colors",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Colors"
+  },
+  {
+    "path": "/theme/typography",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Typography"
+  },
+  {
+    "path": "/base",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Cards",
+    "exact": true
+  },
+  {
+    "path": "/base/accordion",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Accordion"
+  },
+  {
+    "path": "/base/breadcrumbs",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Breadcrumbs"
+  },
+  {
+    "path": "/base/cards",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Cards"
+  },
+  {
+    "path": "/base/carousels",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Carousels"
+  },
+  {
+    "path": "/base/collapses",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Collapses"
+  },
+  {
+    "path": "/base/list-groups",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "ListGroups"
+  },
+  {
+    "path": "/base/navs",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Navs"
+  },
+  {
+    "path": "/base/paginations",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Paginations"
+  },
+  {
+    "path": "/base/placeholders",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Placeholders"
+  },
+  {
+    "path": "/base/popovers",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Popovers"
+  },
+  {
+    "path": "/base/progress",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Progress"
+  },
+  {
+    "path": "/base/spinners",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Spinners"
+  },
+  {
+    "path": "/base/tabs",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Tabs"
+  },
+  {
+    "path": "/base/tables",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Tables"
+  },
+  {
+    "path": "/base/tooltips",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Tooltips"
+  },
+  {
+    "path": "/buttons",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Buttons",
+    "exact": true
+  },
+  {
+    "path": "/buttons/buttons",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Buttons"
+  },
+  {
+    "path": "/buttons/dropdowns",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Dropdowns"
+  },
+  {
+    "path": "/buttons/button-groups",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "ButtonGroups"
+  },
+  {
+    "path": "/charts",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Charts"
+  },
+  {
+    "path": "/forms",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "FormControl",
+    "exact": true
+  },
+  {
+    "path": "/forms/form-control",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "FormControl"
+  },
+  {
+    "path": "/forms/select",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Select"
+  },
+  {
+    "path": "/forms/checks-radios",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "ChecksRadios"
+  },
+  {
+    "path": "/forms/range",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Range"
+  },
+  {
+    "path": "/forms/input-group",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "InputGroup"
+  },
+  {
+    "path": "/forms/floating-labels",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "FloatingLabels"
+  },
+  {
+    "path": "/forms/layout",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Layout"
+  },
+  {
+    "path": "/forms/validation",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Validation"
+  },
+  {
+    "path": "/icons",
+    "exact": true,
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "CoreUIIcons"
+  },
+  {
+    "path": "/icons/coreui-icons",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "CoreUIIcons"
+  },
+  {
+    "path": "/icons/flags",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Flags"
+  },
+  {
+    "path": "/icons/brands",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Brands"
+  },
+  {
+    "path": "/notifications",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Alerts",
+    "exact": true
+  },
+  {
+    "path": "/notifications/alerts",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Alerts"
+  },
+  {
+    "path": "/notifications/badges",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Badges"
+  },
+  {
+    "path": "/notifications/modals",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Modals"
+  },
+  {
+    "path": "/notifications/toasts",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Toasts"
+  },
+  {
+    "path": "/widgets",
+    "name": { "en": "Tax Refund", "he": "החזרי מס" },
+    "element": "Widgets"
+  }
+]

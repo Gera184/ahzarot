@@ -1,0 +1,42 @@
+{
+  "en": {
+    "header": {
+      "dashboard": "Dashboard",
+      "users": "Users",
+      "settings": "Settings",
+      "language": {
+        "english": "EN",
+        "hebrew": "HE"
+      },
+      "theme": {
+        "light": "Light",
+        "dark": "Dark",
+        "auto": "Auto"
+      }
+    },
+    "footer": {
+      "email": "gytbsupp0rt@gmail.com",
+      "phone": "0732187410"
+    }
+  },
+  "he": {
+    "header": {
+      "dashboard": "לוח מחוונים",
+      "users": "משתמשים",
+      "settings": "הגדרות",
+      "language": {
+        "english": "אנגלית",
+        "hebrew": "עברית"
+      },
+      "theme": {
+        "light": "בהיר",
+        "dark": "כהה",
+        "auto": "אוטומטי"
+      }
+    },
+    "footer": {
+      "email": "gytbsupp0rt@gmail.com",
+      "phone": "0732187410"
+    }
+  }
+}

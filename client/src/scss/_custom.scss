@@ -1,0 +1,9 @@
+.nav-link .rtl {
+  margin-right: 0 !important;
+  margin-left: 12px !important;
+}
+
+.sidebar-nav .rtl .nav-group-toggle::after {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
