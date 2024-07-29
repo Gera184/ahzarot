@@ -1,0 +1,38 @@
+                <svg
+                  version="2.0"
+                  class="arrow"
+                  viewBox="0 0 48 63"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_725_56566)">
+                    <g clip-path="url(#clip1_725_56566)">
+                      <path
+                        d="M23.5008 62.3301L46.7008 26.3301H33.6008V0.330078H13.4008V26.3301H0.300781L23.5008 62.3301Z"
+                        fill="#081551"
+                      ></path>
+                      <path
+                        d="M23.5008 0.330078H13.4008V26.3301H0.300781L23.5008 62.3301V0.330078Z"
+                        fill="#081551"
+                      ></path>
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_725_56566">
+                      <rect
+                        width="48"
+                        height="62"
+                        fill="white"
+                        transform="translate(0 0.330078)"
+                      ></rect>
+                    </clipPath>
+                    <clipPath id="clip1_725_56566">
+                      <rect
+                        width="47"
+                        height="62"
+                        fill="white"
+                        transform="translate(0 0.330078)"
+                      ></rect>
+                    </clipPath>
+                  </defs>
+                </svg>

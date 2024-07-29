@@ -1,9 +1,9 @@
 {
   "en": {
     "header": {
-      "dashboard": "Dashboard",
-      "users": "Users",
-      "settings": "Settings",
+      "home": "Home",
+      "contactUs": "Contact us",
+      "aboutUs": "About us",
       "language": {
         "english": "EN",
         "hebrew": "HE"
@@ -39,7 +39,55 @@
           }
         ],
         "button": "Send"
-      }
+      },
+      "subTitle": "Our Services",
+      "subTitleText": "A variety of finance solutions under one roof",
+      "cardsData": [
+        {
+          "title": "Loans",
+          "icon": "cibCashapp",
+          "to": "loans"
+        },
+        {
+          "title": "Funds from insurance companies",
+          "icon": "cibUblockOrigin",
+          "to": "funds_from_insurance_companies"
+        },
+        {
+          "title": "Tax Return",
+          "icon": "cilInstitution",
+          "to": "tax_return"
+        },
+        {
+          "title": "Life insurances",
+          "icon": "cilEnvelopeLetter",
+          "to": "life_insurances"
+        }
+      ],
+      "cardsButtonTitle": "GO",
+      "processStepsTitle": "Tax Refund with Wintax - How Does It Work?",
+      "processStepsCardsData": [
+        {
+          "title": "Initial Eligibility Check Free of Charge",
+          "content": "A tax refund consultant will contact you to fill out a short questionnaire for an initial eligibility check and provide you with a comprehensive explanation of the process in general and this first stage in particular."
+        },
+        {
+          "title": "Transition to the Case Management Department",
+          "content": "At this stage, a case manager will be assigned to you, who will accompany you throughout the entire process with close and personal guidance and complete transparency. We will collect all the data and documents for you to maximize the refund."
+        },
+        {
+          "title": "Performing Various Calculations",
+          "content": "After receiving representation from the authorities and collecting the data, the accounting department will perform a full calculation for you, which includes optimization and cross-referencing with the National Insurance Institute and the Tax Authority to maximize the refund amount."
+        },
+        {
+          "title": "Submitting the File to the Tax Authority",
+          "content": "After performing the calculations and receiving the results, we will sign the reports and submit them to the Tax Authority. We will monitor the tax officer until you receive your money in your account, while keeping you informed of all the actions we are taking."
+        },
+        {
+          "title": "Receiving the Money!",
+          "content": "At the end of the process, where we accompanied you through all the steps, the funds will be transferred directly from the Tax Authority to your account. We will, of course, keep you updated on everything you need to know during the process, at the end of which you can finally enjoy the money that was returned to you."
+        }
+      ]
     },
     "footer": {
       "email": "gytbsupp0rt@gmail.com",
@@ -48,9 +96,9 @@
   },
   "he": {
     "header": {
-      "dashboard": "לוח מחוונים",
-      "users": "משתמשים",
-      "settings": "הגדרות",
+      "home": "בית",
+      "contactUs": "צור קשר",
+      "aboutUs": "עלינו",
       "language": {
         "english": "אנגלית",
         "hebrew": "עברית"
@@ -85,8 +133,61 @@
             "required": true
           }
         ],
-        "button": "שלח"
-      }
+        "formButton": "שלח"
+      },
+      "subTitle": "השירותים שלנו",
+      "subTitleText": "מגוון פתרונות פיננסים תחת קורת גג אחת",
+      "cardsData": [
+        {
+          "title": "הלוואות",
+          "icon": "cibCashapp",
+          "to": "loans"
+        },
+        {
+          "title": "כספים מחברות הביטוח",
+          "icon": "cibUblockOrigin",
+          "to": "funds_from_insurance_companies"
+        },
+        {
+          "title": "החזר מס",
+          "icon": "cilInstitution",
+          "to": "tax_return"
+        },
+        {
+          "title": "ביטוחי חיים",
+          "icon": "cilEnvelopeLetter",
+          "to": "life_insurances"
+        }
+      ],
+      "cardsButtonTitle": "כניסה",
+      "processStepsTitle": "החזר מס עם Wintax - איך זה עובד?",
+      "processStepsCardsData": [
+        {
+          "title": "בדיקת זכאות ראשונית ללא עלות",
+          "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003912.svg",
+          "content": "יועץ להחזרי מס יחזור אליך לצורך מילוי שאלון קצר לבדיקת זכאות ראשונית, ויעניק לך הסבר ראשוני ומקיף על התהליך ככלל ועל שלב ראשון זה בפרט."
+        },
+        {
+          "title": "מעבר למחלקת ניהול תיקים",
+          "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003913.svg",
+          "content": "בשלב זה תצוות לך מנהל/ת תיק אשר תלווה אותך לאורך כל התהליך בליווי צמוד ואישי ובשקיפות מלאה. אנו נאסוף עבורך את כל הנתונים והמסמכים למקסום ההחזר."
+        },
+        {
+          "title": "ביצוע חישובים שונים",
+          "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003915.svg",
+          "content": "לאחר קליטת היצוג ברשויות ואסיפת הנתונים, מחלקת החשבים יעשו עבורך חישוב מלא אשר כולל אופטימיזציה והצלבות למול ביטוח לאומי ומס הכנסה למקסום גובה ההחזר."
+        },
+        {
+          "title": "הגשת התיק למס הכנסה",
+          "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003914.svg",
+          "content": "לאחר ביצוע החישובים ולאחר שמתקבלות תוצאות החישובים, נבצע חתימת הדו”חות ונגיש אותם למס הכנסה, נהיה במעקב אל מול פקיד השומה עד לקבלת כספך בחשבון, תוך שאנו מיידעים אותך בכלל הפעולות אותן אנו מבצעים."
+        },
+        {
+          "title": "קבלת הכסף!",
+          "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003916.svg",
+          "content": "בסיום התהליך בו ליווינו אותך בכל הצעדים, תתבצע העברת הכספים ישירות מרשות המיסים לחשבונך. אנו כמובן נעדכן בכל דבר שעליך לדעת שקרה במהלך התהליך, שבסופו כאמור תוכלו סוף סוף להינות מהכספים שחזרו אליכם."
+        }
+      ]
     },
     "footer": {
       "email": "gytbsupp0rt@gmail.com",

@@ -4,21 +4,7 @@ import SimpleBar from 'simplebar-react'
 import 'simplebar-react/dist/simplebar.min.css'
 import { CBadge, CNavLink, CSidebarNav } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
-import * as icons from '@coreui/icons'
-
-const iconMap = {
-  cilBell: icons.cilBell,
-  cilCalculator: icons.cilCalculator,
-  cilChartPie: icons.cilChartPie,
-  cilCursor: icons.cilCursor,
-  cilDescription: icons.cilDescription,
-  cilDrop: icons.cilDrop,
-  cilNotes: icons.cilNotes,
-  cilPencil: icons.cilPencil,
-  cilPuzzle: icons.cilPuzzle,
-  cilSpeedometer: icons.cilSpeedometer,
-  cilStar: icons.cilStar,
-}
+import { iconMap } from '../icons-mapper/IconsMapper'
 
 export const AppSidebarNav = ({ items, language }) => {
   const direction = language === 'he' ? 'rtl' : 'ltr'

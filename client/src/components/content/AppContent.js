@@ -7,7 +7,7 @@ const AppContent = ({ routes, texts, language }) => {
   const direction = language === 'he' ? 'rtl' : 'ltr'
 
   return (
-    <CContainer className={`px-4 content_wrapper_${direction}`} lg>
+    <CContainer fluid className={`p-0 content_wrapper_${direction}`}>
       <Suspense fallback={<CSpinner color="primary" />}>
         <Routes>
           {routes.map((route, idx) => {

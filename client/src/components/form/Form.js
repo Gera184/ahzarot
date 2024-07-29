@@ -2,10 +2,10 @@ import React from 'react'
 import { CForm, CFormLabel, CFormInput, CButton, CCol, CRow, CContainer } from '@coreui/react'
 
 export const Form = ({ formData, direction }) => {
-  const { title, button } = formData
+  const { title, formButton } = formData
 
   return (
-    <CContainer className="my-5 ">
+    <CContainer className="my-5 pt-4">
       <CRow className={`justify-content-${direction === 'rtl' ? 'end' : 'start'}`}>
         <CCol md="8" lg="6">
           <h2 className="text-center mb-4">{title}</h2>
@@ -25,7 +25,7 @@ export const Form = ({ formData, direction }) => {
               className="w-100"
               style={{ backgroundColor: '#212631', color: 'white', borderColor: '#212631' }}
             >
-              {button}
+              {formButton}
             </CButton>
           </CForm>
         </CCol>

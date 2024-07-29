@@ -1,3 +1,31 @@
+.bg_background {
+  position: relative; /* Ensure positioning context for the pseudo-element */
+  overflow: hidden; /* Prevent overflow */
+  z-index: 1; /* Ensure text is above the background */
+}
+
+.bg_background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(https://yp-pitronot.co.il/wp-content/uploads/2022/06/img1.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.content_wrapper_rtl {
+  direction: rtl;
+}
+.content_wrapper_ltr {
+  direction: ltr;
+}
+
 .nav-link .rtl {
   margin-right: 0 !important;
   margin-left: 12px !important;
@@ -8,15 +36,129 @@
   margin-right: auto !important;
 }
 
-.content_wrapper_rtl {
-  direction: rtl;
-}
-.content_wrapper_ltr {
-  direction: ltr;
+.card_wrapper {
+  height: 16rem;
+  width: 16rem;
+  text-align: center;
+  background-color: #001b42;
+  border-radius: 1rem;
+  color: white;
+
+  .card_btn {
+    background-color: #0058a0;
+    border-color: #0058a0;
+    color: white;
+    margin-bottom: -1.5rem;
+  }
 }
 
-.body {
-  background-image: url(https://yp-pitronot.co.il/wp-content/uploads/2022/06/img1.png);
-  background-position: right;
-  background-repeat: no-repeat;
+.process_steps_container {
+  background-color: white;
+
+  .hiw {
+    .items {
+      padding: 40px 96px 120px;
+      margin-top: 40px;
+      position: relative;
+
+      &::before {
+        content: '';
+        background: linear-gradient(
+          180deg,
+          rgba(145, 145, 153, 0) 0%,
+          #919199 27.08%,
+          rgba(145, 145, 153, 0) 100%,
+          rgba(145, 145, 153, 0) 100%
+        );
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .arrow {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 48px;
+          height: 63px;
+        }
+
+        .process_card_wrapper {
+          border: 1px solid #bdbdc0;
+          border-radius: 8px;
+          background: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 294px;
+            height: 1px;
+            background: #081551;
+            position: absolute;
+            top: 30px;
+          }
+
+          &::after {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #081551;
+            position: absolute;
+            top: 27px;
+          }
+
+          &.even {
+            &::before {
+              right: -295px;
+              left: auto;
+            }
+
+            &::after {
+              right: -302px;
+              left: auto;
+            }
+          }
+
+          &.not_even {
+            &::before {
+              left: -295px;
+              right: auto;
+            }
+
+            &::after {
+              left: -302px;
+              right: auto;
+            }
+          }
+        }
+
+        .text {
+          .txt {
+            font-size: 21px;
+            line-height: 1.4;
+
+            .item-name {
+              font-size: 28px;
+              font-weight: 700;
+              margin-bottom: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

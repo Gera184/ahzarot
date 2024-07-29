@@ -21,9 +21,10 @@ import { AppBreadcrumb } from '../index'
 
 const AppHeader = ({ routes, texts, language }) => {
   const direction = language === 'he' ? 'end' : 'start'
-
   const { colorMode, setColorMode } = useColorModes('coreui-free-react-admin-template-theme')
   const sidebarShow = useSelector((state) => state.app.sidebarShow)
+
+  const { home, contactUs, aboutUs } = texts.header
 
   const headerRef = useRef()
   const dispatch = useDispatch()
@@ -50,15 +51,19 @@ const AppHeader = ({ routes, texts, language }) => {
         </CHeaderToggler>
         <CHeaderNav className="d-none d-md-flex">
           <CNavItem>
-            <CNavLink to="/dashboard" as={NavLink}>
-              {texts.header.dashboard}
+            <CNavLink to="/" as={NavLink}>
+              {home}
             </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink>{texts.header.users}</CNavLink>
+            <CNavLink to="/contact-us" as={NavLink}>
+              {contactUs}
+            </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink>{texts.header.settings}</CNavLink>
+            <CNavLink to="/about-us" as={NavLink}>
+              {aboutUs}
+            </CNavLink>
           </CNavItem>
         </CHeaderNav>
         <CHeaderNav className="ms-auto">

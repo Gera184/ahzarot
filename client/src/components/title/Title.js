@@ -1,14 +1,27 @@
 import React from 'react'
-import { CContainer, CRow, CCol, CCard, CCardHeader, CCardTitle, CCardBody } from '@coreui/react'
+import { CContainer, CRow, CCol } from '@coreui/react'
 
-export const Title = ({ titleData }) => {
-  const { title } = titleData
+export const Title = ({
+  title = '',
+  addShadow = false,
+  size = 'display-1',
+  color = 'text-dark',
+  subtitle,
+}) => {
+  const shadow = addShadow ? 'shadow-lg' : ''
+
+  const subtitleStyle = {
+    fontSize: '1.25rem',
+    color: '#6c757d',
+    marginTop: '0.5rem',
+  }
 
   return (
     <CContainer className="text-center">
       <CRow>
         <CCol>
-          <h1 className="display-1 shadow-lg">{title}</h1>
+          <h1 className={`${size} ${shadow} ${color}`}>{title}</h1>
+          {subtitle && <p style={subtitleStyle}>{subtitle}</p>}
         </CCol>
       </CRow>
     </CContainer>

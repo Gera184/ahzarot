@@ -18,15 +18,15 @@
   {
     "component": "CNavTitle",
     "name": {
-      "en": "Tax Refund",
-      "he": "החזרי מס"
+      "en": "our services",
+      "he": "השירותים שלנו"
     }
   },
   {
     "component": "CNavItem",
     "name": {
-      "en": "Tax Refund",
-      "he": "החזרי מס"
+      "en": "Funds from insurance companies",
+      "he": "כספים מחברות הביטוח"
     },
     "to": "/theme/colors",
     "icon": "cilChartPie"
@@ -34,8 +34,17 @@
   {
     "component": "CNavItem",
     "name": {
-      "en": "Tax Refund",
-      "he": "החזרי מס"
+      "en": "Life insurances",
+      "he": "ביטוחי חיים"
+    },
+    "to": "/theme/life_insurances",
+    "icon": "cilCursor"
+  },
+  {
+    "component": "CNavItem",
+    "name": {
+      "en": "Loans",
+      "he": "הלוואות"
     },
     "to": "/theme/typography",
     "icon": "cilCursor"

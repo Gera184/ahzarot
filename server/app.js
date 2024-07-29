@@ -6,6 +6,7 @@ const HttpError = require("./models/http-error");
 const routes = require("./routes/routes");
 const navs = require("./routes/_nav");
 const texts = require("./routes/texts");
+const contact = require("./routes/contact");
 
 const app = express();
 const server = http.createServer(app);
@@ -27,6 +28,7 @@ app.use((req, res, next) => {
 app.use("/api/routes", routes);
 app.use("/api/navs", navs);
 app.use("/api/texts", texts);
+app.use("/api/contact", contact);
 
 app.use((req, res, next) => {
   const error = new HttpError("Could not find this route.", 404);
