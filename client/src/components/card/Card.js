@@ -5,10 +5,10 @@ import { CCard, CCardBody, CCardFooter, CButton, CImage } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 import { iconMap } from '../icons-mapper/IconsMapper'
 
-export const Card = ({ title, to, buttonTitle, icon, imgeSrc = null, isEven = false }) => {
+export const Card = ({ title, to, buttonTitle, icon, imgeSrc = null }) => {
   if (imgeSrc)
     return (
-      <CCard className={`process_card_wrapper ${isEven ? 'even' : 'not_even'}`}>
+      <CCard className="process_card_wrapper">
         <CCardBody>
           <CImage src={imgeSrc} />
         </CCardBody>

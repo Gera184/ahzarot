@@ -7,7 +7,14 @@ import arrow from '../../../assets/svg-icons/arrow.svg'
 
 export const Home = ({ homeData, direction }) => {
   const { home } = homeData
-  const { cardsData, cardsButtonTitle, processStepsTitle, processStepsCardsData } = home
+  const {
+    cardsData,
+    cardsButtonTitle,
+    processStepsTitle,
+    processStepsCardsData,
+    whyUsTitle,
+    whyUsContent,
+  } = home
 
   return (
     <CContainer fluid className="p-0">
@@ -43,55 +50,50 @@ export const Home = ({ homeData, direction }) => {
         <section className="hiw">
           <CContainer className="items">
             {processStepsCardsData.map((card, index) => {
-              const isEven = index % 2 === 0
-
               return (
                 <CRow className="item" key={card.title}>
-                  {isEven ? (
-                    <>
-                      <CCol xs={12} sm={12} md={4} lg={4}>
-                        <div className="text">
-                          <div className="txt">
-                            <h3 className="item-name">
-                              <span className="number">{index + 1}.</span> {card.title}
-                            </h3>
-                            {card.content}
-                          </div>
-                        </div>
-                      </CCol>
-                      <CCol xs={12} sm={12} md={4} lg={4}>
-                        <CImage src={arrow} className="arrow" />
-                      </CCol>
-                      <CCol xs={12} sm={12} md={4} lg={4}>
-                        <Card imgeSrc={card.imgSrc} isEven={isEven} />
-                      </CCol>
-                    </>
-                  ) : (
-                    <>
-                      <CCol xs={12} sm={12} md={4} lg={4}>
-                        <Card imgeSrc={card.imgSrc} isEven={isEven} />
-                      </CCol>
-                      <CCol xs={12} sm={12} md={4} lg={4}>
-                        <CImage src={arrow} className="arrow" />
-                      </CCol>
-                      <CCol xs={12} sm={12} md={4} lg={4}>
-                        <div className="text">
-                          <div className="txt">
-                            <h3 className="item-name">
-                              <span className="number">{index + 1}.</span> {card.title}
-                            </h3>
-                            {card.content}
-                          </div>
-                        </div>
-                      </CCol>
-                    </>
-                  )}
+                  <CCol xs={12} sm={12} md={4} lg={4}>
+                    <div className="text">
+                      <div className="txt">
+                        <h3 className="item-name">
+                          <span className="number">{index + 1}.</span> {card.title}
+                        </h3>
+                        {card.content}
+                      </div>
+                    </div>
+                  </CCol>
+                  <CCol xs={12} sm={12} md={4} lg={4} className="arrow_wrapper">
+                    <CImage src={arrow} className="arrow" />
+                  </CCol>
+                  <CCol xs={12} sm={12} md={4} lg={4}>
+                    <Card imgeSrc={card.imgSrc} />
+                  </CCol>
                 </CRow>
               )
             })}
           </CContainer>
         </section>
       </CContainer>
+
+      <CContainer
+        fluid
+        className="why_us_wrapper text-center d-flex flex-column align-items-center"
+      >
+        <CRow>
+          <CCol>
+            <h2 className="why_us_title">{whyUsTitle}</h2>
+          </CCol>
+        </CRow>
+        <CRow className="w-100 justify-content-center">
+          {whyUsContent.map((v) => (
+            <CCol key={v.text} xs={6} sm={6} md={3} lg={3} className="text-center">
+              <img src={v.imgSrc} />
+              <div className="image-text">{v.text}</div>
+            </CCol>
+          ))}
+        </CRow>
+      </CContainer>
+      
     </CContainer>
   )
 }

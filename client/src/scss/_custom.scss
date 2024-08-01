@@ -22,6 +22,7 @@
 .content_wrapper_rtl {
   direction: rtl;
 }
+
 .content_wrapper_ltr {
   direction: ltr;
 }
@@ -49,6 +50,30 @@
     border-color: #0058a0;
     color: white;
     margin-bottom: -1.5rem;
+  }
+}
+
+.why_us_wrapper {
+  background-image: url(https://yp-pitronot.co.il/wp-content/uploads/2022/06/img2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 75px 0px 75px 0px;
+
+  .why_us_title {
+    color: #ffffff;
+    font-family: 'Open Sans Hebrew Condensed', Sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+  }
+
+  .image-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Open Sans Hebrew Condensed', Sans-serif;
+    font-size: 26px;
+    font-weight: 500;
   }
 }
 
@@ -109,6 +134,8 @@
             background: #081551;
             position: absolute;
             top: 30px;
+            right: -295px;
+            left: auto;
           }
 
           &::after {
@@ -119,30 +146,8 @@
             background: #081551;
             position: absolute;
             top: 27px;
-          }
-
-          &.even {
-            &::before {
-              right: -295px;
-              left: auto;
-            }
-
-            &::after {
-              right: -302px;
-              left: auto;
-            }
-          }
-
-          &.not_even {
-            &::before {
-              left: -295px;
-              right: auto;
-            }
-
-            &::after {
-              left: -302px;
-              right: auto;
-            }
+            right: -302px;
+            left: auto;
           }
         }
 
@@ -160,5 +165,66 @@
         }
       }
     }
+  }
+}
+
+.hiw .items .item:nth-child(2n + 2) {
+  flex-direction: row-reverse;
+
+  .process_card_wrapper {
+    &::before {
+      left: -295px;
+      right: auto;
+    }
+
+    &::after {
+      left: -302px;
+      right: auto;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .process_steps_container .hiw .items::before,
+  .process_steps_container .hiw .items .item .process_card_wrapper::before,
+  .process_steps_container .hiw .items .item .process_card_wrapper::after {
+    display: none;
+  }
+
+  .process_steps_container .hiw .items {
+    padding: 0 16px;
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .process_steps_container .hiw .items .item .arrow {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+
+  .hiw .items {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .hiw .items .item .image,
+  .hiw .items .item .text {
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+  }
+
+  .process_steps_container .hiw .items .item .text .txt,
+  .process_steps_container .hiw .items .item .text .txt .item-name {
+    font-size: 19px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .arrow_wrapper {
+    margin: 1rem 0;
+    text-align: center;
   }
 }

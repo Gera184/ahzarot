@@ -187,6 +187,25 @@
           "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003916.svg",
           "content": "בסיום התהליך בו ליווינו אותך בכל הצעדים, תתבצע העברת הכספים ישירות מרשות המיסים לחשבונך. אנו כמובן נעדכן בכל דבר שעליך לדעת שקרה במהלך התהליך, שבסופו כאמור תוכלו סוף סוף להינות מהכספים שחזרו אליכם."
         }
+      ],
+      "whyUsTitle": "למה לבחור י.פ פיננסים?",
+      "whyUsContent": [
+        {
+          "imgSrc": "https://yp-pitronot.co.il/wp-content/uploads/2022/06/icon3.png",
+          "text": "שירות איכותי"
+        },
+        {
+          "imgSrc": "https://yp-pitronot.co.il/wp-content/uploads/2022/06/icon1.png",
+          "text": "יחס אישי"
+        },
+        {
+          "imgSrc": "https://yp-pitronot.co.il/wp-content/uploads/2022/06/icon2.png",
+          "text": "יעוץ והכוונה"
+        },
+        {
+          "imgSrc": "https://yp-pitronot.co.il/wp-content/uploads/2022/06/icon4.png",
+          "text": "לקוחות ממליצים"
+        }
       ]
     },
     "footer": {
