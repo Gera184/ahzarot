@@ -1,22 +1,25 @@
-.bg_background {
-  position: relative; /* Ensure positioning context for the pseudo-element */
-  overflow: hidden; /* Prevent overflow */
-  z-index: 1; /* Ensure text is above the background */
+* {
+  font-family: 'Open Sans Hebrew Condensed', Sans-serif;
 }
+.bg_background {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 
-.bg_background::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url(https://yp-pitronot.co.il/wp-content/uploads/2022/06/img1.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  z-index: -1;
-  opacity: 0.5;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://yp-pitronot.co.il/wp-content/uploads/2022/06/img1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.5;
+  }
 }
 
 .content_wrapper_rtl {
@@ -28,12 +31,10 @@
 }
 
 .nav-link .rtl {
-  margin-right: 0 !important;
   margin-left: 12px !important;
 }
 
 .sidebar-nav .rtl .nav-group-toggle::after {
-  margin-left: 0 !important;
   margin-right: auto !important;
 }
 
@@ -55,24 +56,21 @@
 
 .why_us_wrapper {
   background-image: url(https://yp-pitronot.co.il/wp-content/uploads/2022/06/img2.jpg);
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 75px 0px 75px 0px;
+  padding: 75px 0;
 
   .why_us_title {
     color: #ffffff;
-    font-family: 'Open Sans Hebrew Condensed', Sans-serif;
     font-size: 48px;
     font-weight: 800;
   }
 
   .image-text {
     margin-top: 10px;
-    font-size: 16px;
-    color: #ffffff;
-    font-family: 'Open Sans Hebrew Condensed', Sans-serif;
     font-size: 26px;
+    color: #ffffff;
     font-weight: 500;
   }
 }
@@ -92,7 +90,6 @@
           180deg,
           rgba(145, 145, 153, 0) 0%,
           #919199 27.08%,
-          rgba(145, 145, 153, 0) 100%,
           rgba(145, 145, 153, 0) 100%
         );
         width: 2px;
@@ -126,7 +123,9 @@
           align-items: center;
           justify-content: center;
           position: relative;
+        }
 
+        .rtl {
           &::before {
             content: '';
             width: 294px;
@@ -135,7 +134,6 @@
             position: absolute;
             top: 30px;
             right: -295px;
-            left: auto;
           }
 
           &::after {
@@ -147,7 +145,28 @@
             position: absolute;
             top: 27px;
             right: -302px;
-            left: auto;
+          }
+        }
+        .ltr {
+          &::before {
+            content: '';
+            width: 294px;
+            height: 1px;
+            background: #081551;
+            position: absolute;
+            top: 30px;
+            left: -295px;
+          }
+
+          &::after {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #081551;
+            position: absolute;
+            top: 27px;
+            left: -302px;
           }
         }
 
@@ -166,65 +185,119 @@
       }
     }
   }
+
+  .hiw .items .item:nth-child(2n + 2) {
+    flex-direction: row-reverse;
+
+    .rtl {
+      &::before {
+        left: -295px;
+        right: auto;
+      }
+
+      &::after {
+        left: -302px;
+        right: auto;
+      }
+    }
+
+    .ltr {
+      &::before {
+        right: -295px;
+        left: auto;
+      }
+
+      &::after {
+        right: -302px;
+        left: auto;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    .hiw .items::before,
+    .hiw .items .item .process_card_wrapper::before,
+    .hiw .items .item .process_card_wrapper::after {
+      display: none;
+    }
+
+    .hiw .items {
+      padding: 0 16px !important;
+      margin-top: 40px;
+      position: relative;
+    }
+
+    .hiw .items .item .arrow {
+      position: static;
+      transform: none;
+    }
+
+    .hiw .items {
+      padding: 0;
+      margin-top: 0;
+    }
+
+    .hiw .items .item .image,
+    .hiw .items .item .text {
+      width: 100%;
+      min-height: auto;
+      padding: 0;
+    }
+
+    .hiw .items .item .text .txt,
+    .hiw .items .item .text .txt .item-name {
+      font-size: 19px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .arrow_wrapper {
+      margin: 1rem 0;
+      text-align: center;
+    }
+  }
 }
 
-.hiw .items .item:nth-child(2n + 2) {
-  flex-direction: row-reverse;
+.customers_recommend_container {
+  background-color: white;
 
-  .process_card_wrapper {
-    &::before {
-      left: -295px;
-      right: auto;
-    }
+  .customers_recommend_container_title {
+    font-size: 48px;
+    font-weight: 800;
+  }
+
+  .customers_recommend_container_sub_title {
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .customers_recommend_content {
+    position: relative;
+    padding: 50px;
+    background-color: #f2f2f2;
 
     &::after {
-      left: -302px;
-      right: auto;
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      width: 20px;
+      height: 20px;
+      background-color: #f2f2f2;
+      transform: translateX(-50%) scaleX(0.75) rotate(45deg);
+    }
+
+    .customers_recommend_text {
+      line-height: 1.5;
+      color: #01003f;
+      font-size: 24px;
+      font-weight: 500;
     }
   }
-}
 
-@media (max-width: 900px) {
-  .process_steps_container .hiw .items::before,
-  .process_steps_container .hiw .items .item .process_card_wrapper::before,
-  .process_steps_container .hiw .items .item .process_card_wrapper::after {
-    display: none;
-  }
-
-  .process_steps_container .hiw .items {
-    padding: 0 16px;
-    margin-top: 40px;
-    position: relative;
-  }
-
-  .process_steps_container .hiw .items .item .arrow {
-    position: static;
-    top: auto;
-    left: auto;
-    transform: none;
-  }
-
-  .hiw .items {
-    padding: 0;
-    margin-top: 0;
-  }
-
-  .hiw .items .item .image,
-  .hiw .items .item .text {
-    width: 100%;
-    min-height: auto;
-    padding: 0;
-  }
-
-  .process_steps_container .hiw .items .item .text .txt,
-  .process_steps_container .hiw .items .item .text .txt .item-name {
-    font-size: 19px;
-    line-height: 1.5;
-    text-align: center;
-  }
-
-  .arrow_wrapper {
-    margin: 1rem 0;
-    text-align: center;
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from '../../../components/title/Title'
 import { Form } from '../../../components/form/Form'
-import { CContainer, CRow, CCol, CImage } from '@coreui/react'
+import { CContainer, CRow, CCol, CImage, CCarousel, CCarouselItem } from '@coreui/react'
 import { Card } from '../../../components/card/Card'
 import arrow from '../../../assets/svg-icons/arrow.svg'
 
@@ -14,6 +14,10 @@ export const Home = ({ homeData, direction }) => {
     processStepsCardsData,
     whyUsTitle,
     whyUsContent,
+    customersRecommendTitle,
+    customersRecommendSubTitle,
+    customersRecommendContent,
+    customersRecommendImges,
   } = home
 
   return (
@@ -66,7 +70,7 @@ export const Home = ({ homeData, direction }) => {
                     <CImage src={arrow} className="arrow" />
                   </CCol>
                   <CCol xs={12} sm={12} md={4} lg={4}>
-                    <Card imgeSrc={card.imgSrc} />
+                    <Card imgeSrc={card.imgSrc} direction={direction} />
                   </CCol>
                 </CRow>
               )
@@ -93,7 +97,42 @@ export const Home = ({ homeData, direction }) => {
           ))}
         </CRow>
       </CContainer>
-      
+
+      <CContainer
+        fluid
+        className="customers_recommend_container text-center align-items-center pt-5 pb-5"
+      >
+        <CContainer>
+          <CRow>
+            <CCol>
+              <h2 className="customers_recommend_container_title">{customersRecommendTitle}</h2>
+            </CCol>
+          </CRow>
+          <CRow className="pb-3">
+            <CCol>
+              <h2 className="customers_recommend_container_sub_title">
+                {customersRecommendSubTitle}
+              </h2>
+            </CCol>
+          </CRow>
+          <CRow className="customers_recommend_content">
+            <CCol className="customers_recommend_text">
+              <span>{customersRecommendContent}</span>
+            </CCol>
+          </CRow>
+          <CRow className="mt-4">
+            <CCol>
+              <CCarousel controls={false} indicators={false} interval={3000}>
+                {customersRecommendImges.map((imgSrc, index) => (
+                  <CCarouselItem key={index}>
+                    <CImage src={imgSrc} alt={`Customer Image ${index + 1}`} />
+                  </CCarouselItem>
+                ))}
+              </CCarousel>
+            </CCol>
+          </CRow>
+        </CContainer>
+      </CContainer>
     </CContainer>
   )
 }

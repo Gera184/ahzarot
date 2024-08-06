@@ -23,22 +23,28 @@
             "label": "Full name",
             "type": "text",
             "placeholder": "Full name",
-            "required": true
+            "required": true,
+            "name": "fullName",
+            "autocomplete": "name"
           },
           {
             "label": "Email",
             "type": "email",
             "placeholder": "Email (not required)",
-            "required": false
+            "required": false,
+            "name": "email",
+            "autocomplete": "email"
           },
           {
             "label": "Phone",
             "type": "text",
             "placeholder": "Phone",
-            "required": true
+            "required": true,
+            "name": "phone",
+            "autocomplete": "tel"
           }
         ],
-        "button": "Send"
+        "formButton": "Send"
       },
       "subTitle": "Our Services",
       "subTitleText": "A variety of finance solutions under one roof",
@@ -69,24 +75,57 @@
       "processStepsCardsData": [
         {
           "title": "Initial Eligibility Check Free of Charge",
+          "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003912.svg",
           "content": "A tax refund consultant will contact you to fill out a short questionnaire for an initial eligibility check and provide you with a comprehensive explanation of the process in general and this first stage in particular."
         },
         {
           "title": "Transition to the Case Management Department",
+          "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003913.svg",
           "content": "At this stage, a case manager will be assigned to you, who will accompany you throughout the entire process with close and personal guidance and complete transparency. We will collect all the data and documents for you to maximize the refund."
         },
         {
           "title": "Performing Various Calculations",
+          "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003915.svg",
           "content": "After receiving representation from the authorities and collecting the data, the accounting department will perform a full calculation for you, which includes optimization and cross-referencing with the National Insurance Institute and the Tax Authority to maximize the refund amount."
         },
         {
           "title": "Submitting the File to the Tax Authority",
+          "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003914.svg",
           "content": "After performing the calculations and receiving the results, we will sign the reports and submit them to the Tax Authority. We will monitor the tax officer until you receive your money in your account, while keeping you informed of all the actions we are taking."
         },
         {
           "title": "Receiving the Money!",
+          "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003916.svg",
           "content": "At the end of the process, where we accompanied you through all the steps, the funds will be transferred directly from the Tax Authority to your account. We will, of course, keep you updated on everything you need to know during the process, at the end of which you can finally enjoy the money that was returned to you."
         }
+      ],
+      "whyUsTitle": "Why Us?",
+      "whyUsContent": [
+        {
+          "imgSrc": "https://yp-pitronot.co.il/wp-content/uploads/2022/06/icon3.png",
+          "text": "Service"
+        },
+        {
+          "imgSrc": "https://yp-pitronot.co.il/wp-content/uploads/2022/06/icon1.png",
+          "text": "Professionalism"
+        },
+        {
+          "imgSrc": "https://yp-pitronot.co.il/wp-content/uploads/2022/06/icon2.png",
+          "text": "Integrity"
+        },
+        {
+          "imgSrc": "https://yp-pitronot.co.il/wp-content/uploads/2022/06/icon4.png",
+          "text": "Checking for you"
+        }
+      ],
+      "customersRecommendTitle": "Customer Recommendations",
+      "customersRecommendSubTitle": "What our customers say about us?",
+      "customersRecommendContent": "“I came to Y.P Finance upon recommendation from a relative. Excellent service from the moment of the check to finding and transferring the funds, answered every question with great courtesy - highly recommend!”",
+      "customersRecommendImges": [
+        "https://yp-pitronot.co.il/wp-content/uploads/2022/06/avatar-0a37bc9b1ca55bda400c32f9a98d9a8c.jpg",
+        "https://yp-pitronot.co.il/wp-content/uploads/2022/06/avatar-0a37bc9b1ca55bda400c32f9a98d9a8c.jpg",
+        "https://yp-pitronot.co.il/wp-content/uploads/2022/06/avatar-0a37bc9b1ca55bda400c32f9a98d9a8c.jpg",
+        "https://yp-pitronot.co.il/wp-content/uploads/2022/06/avatar-0a37bc9b1ca55bda400c32f9a98d9a8c.jpg"
       ]
     },
     "footer": {
@@ -115,22 +154,28 @@
         "title": "אתם תופתעו כמה כסף מחכה לכם!",
         "inputs": [
           {
+            "name": "name",
             "label": "שם מלא",
             "type": "text",
             "placeholder": "שם מלא",
-            "required": true
+            "required": true,
+            "autocomplete": "name"
           },
           {
+            "name": "email",
             "label": "אימייל",
             "type": "email",
             "placeholder": "אימייל (לא חובה)",
-            "required": false
+            "required": false,
+            "autocomplete": "email"
           },
           {
+            "name": "phone",
             "label": "טלפון",
             "type": "text",
             "placeholder": "טלפון",
-            "required": true
+            "required": true,
+            "autocomplete": "tel"
           }
         ],
         "formButton": "שלח"
@@ -160,57 +205,72 @@
         }
       ],
       "cardsButtonTitle": "כניסה",
-      "processStepsTitle": "החזר מס עם Wintax - איך זה עובד?",
+      "processStepsTitle": "החזר מס איתנו - איך זה עובד?",
       "processStepsCardsData": [
         {
-          "title": "בדיקת זכאות ראשונית ללא עלות",
+          "title": "בדיקת זכאות",
           "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003912.svg",
-          "content": "יועץ להחזרי מס יחזור אליך לצורך מילוי שאלון קצר לבדיקת זכאות ראשונית, ויעניק לך הסבר ראשוני ומקיף על התהליך ככלל ועל שלב ראשון זה בפרט."
+          "content": "שיחה קצרה של כ 5-10 דקות ובסיומה תדעו האם מגיע לכם החזר ממס הכנסה! וגם על אילו קריטריונים."
         },
         {
-          "title": "מעבר למחלקת ניהול תיקים",
+          "title": "חתימה על יפוי כוח",
           "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003913.svg",
-          "content": "בשלב זה תצוות לך מנהל/ת תיק אשר תלווה אותך לאורך כל התהליך בליווי צמוד ואישי ובשקיפות מלאה. אנו נאסוף עבורך את כל הנתונים והמסמכים למקסום ההחזר."
+          "content": "תוך 24 שעות מקבלים יפוי כוח למס הכנסה, לאחר החתימה עליו אנחנו יכולים להתחיל לעבוד על התיק שלכם!"
         },
         {
-          "title": "ביצוע חישובים שונים",
+          "title": "הגשת הדוח למס הכנסה",
           "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003915.svg",
-          "content": "לאחר קליטת היצוג ברשויות ואסיפת הנתונים, מחלקת החשבים יעשו עבורך חישוב מלא אשר כולל אופטימיזציה והצלבות למול ביטוח לאומי ומס הכנסה למקסום גובה ההחזר."
+          "content": "אנחנו מתחייבים להגיש את התיק למס הכנסה עד 30 ימי עסקים! ולעדכן מה גובה ההחזר שהוגש."
         },
         {
-          "title": "הגשת התיק למס הכנסה",
+          "title": "אישור ממס הכנסה",
           "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003914.svg",
-          "content": "לאחר ביצוע החישובים ולאחר שמתקבלות תוצאות החישובים, נבצע חתימת הדו”חות ונגיש אותם למס הכנסה, נהיה במעקב אל מול פקיד השומה עד לקבלת כספך בחשבון, תוך שאנו מיידעים אותך בכלל הפעולות אותן אנו מבצעים."
+          "content": "לאחר ההגשה אנחנו מחכים לאישור ממס הכנסה על ההחזר שלכם! שימו לב, שלב זה עלול לקחת זמן ויש להיעזר בסבלנות, זמן ההמתנה תלוי בפקיד השומה האזורי שלכם."
         },
         {
-          "title": "קבלת הכסף!",
+          "title": "הפקדת הכספים",
           "imgSrc": "https://wintax.co.il/wp-content/uploads/2024/03/Group-1000003916.svg",
-          "content": "בסיום התהליך בו ליווינו אותך בכל הצעדים, תתבצע העברת הכספים ישירות מרשות המיסים לחשבונך. אנו כמובן נעדכן בכל דבר שעליך לדעת שקרה במהלך התהליך, שבסופו כאמור תוכלו סוף סוף להינות מהכספים שחזרו אליכם."
+          "content": "לאחר האישור ממס הכנסה הכסף יופקד ישירות לחשבון הבנק שלכם!"
         }
       ],
-      "whyUsTitle": "למה לבחור י.פ פיננסים?",
+      "whyUsTitle": "למה אנחנו?",
       "whyUsContent": [
         {
           "imgSrc": "https://yp-pitronot.co.il/wp-content/uploads/2022/06/icon3.png",
-          "text": "שירות איכותי"
+          "text": "שירות"
         },
         {
           "imgSrc": "https://yp-pitronot.co.il/wp-content/uploads/2022/06/icon1.png",
-          "text": "יחס אישי"
+          "text": "מקצועיות"
         },
         {
           "imgSrc": "https://yp-pitronot.co.il/wp-content/uploads/2022/06/icon2.png",
-          "text": "יעוץ והכוונה"
+          "text": "הגינות"
         },
         {
           "imgSrc": "https://yp-pitronot.co.il/wp-content/uploads/2022/06/icon4.png",
-          "text": "לקוחות ממליצים"
+          "text": "בודקים בשבילכם"
         }
+      ],
+      "customersRecommendTitle": "לקוחות ממליצים",
+      "customersRecommendSubTitle": "מה הלקוחות שלנו אומרים עלינו?",
+      "customersRecommendContent": "”הגעתי ל-י.פ פיננסים לאחר המלצה מקרובת משפחתי. שירות מצוין מרגע הבדיקה ועד לאיתור הכספים והעברתם, ענו על כל שאלה באדיבות רבה - ממליצה בחום!“",
+      "customersRecommendImges": [
+        "https://yp-pitronot.co.il/wp-content/uploads/2022/06/avatar-0a37bc9b1ca55bda400c32f9a98d9a8c.jpg",
+        "https://yp-pitronot.co.il/wp-content/uploads/2022/06/avatar-0a37bc9b1ca55bda400c32f9a98d9a8c.jpg",
+        "https://yp-pitronot.co.il/wp-content/uploads/2022/06/avatar-0a37bc9b1ca55bda400c32f9a98d9a8c.jpg",
+        "https://yp-pitronot.co.il/wp-content/uploads/2022/06/avatar-0a37bc9b1ca55bda400c32f9a98d9a8c.jpg"
       ]
     },
     "footer": {
-      "email": "gytbsupp0rt@gmail.com",
-      "phone": "0732187410"
+      "email": {
+        "text": "gytbsupp0rt@gmail.com",
+        "icon": "cilEmail"
+      },
+      "phone": {
+        "text": "0732187410",
+        "icon": "cilPhone"
+      }
     }
   }
 }

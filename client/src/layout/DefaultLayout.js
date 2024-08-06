@@ -17,7 +17,7 @@ const DefaultLayout = () => {
   const formattedNavs = convertAndUpdateNavItems(navsData.navs)
   const selectedLanguageTexts = textsData.texts[language]
   const { routes } = routesData
-
+ 
   return (
     <div>
       <AppSidebar navigation={formattedNavs} language={language} />
