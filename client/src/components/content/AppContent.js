@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { CContainer, CSpinner } from '@coreui/react'
-import { Home } from '../../views/pages/home/Home'
+import componentMapping from '../../utils/componentMapping'
 
 const AppContent = ({ routes, texts, language }) => {
   const direction = language === 'he' ? 'rtl' : 'ltr'
@@ -11,13 +11,15 @@ const AppContent = ({ routes, texts, language }) => {
       <Suspense fallback={<CSpinner color="primary" />}>
         <Routes>
           {routes.map((route, idx) => {
+            const Component = componentMapping[route.element]
+
             return (
               <Route
                 key={idx}
                 path={route.path}
                 exact={route.exact}
-                name={route.name}
-                element={<Home homeData={texts} direction={direction} />}
+                name={route.element}
+                element={<Component texts={texts} direction={direction} />}
               />
             )
           })}

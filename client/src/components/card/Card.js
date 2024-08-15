@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import { CCard, CCardBody, CCardFooter, CButton, CImage } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
-import { iconMap } from '../icons-mapper/IconsMapper'
+import { iconMap } from '../../utils/IconsMapper'
 
 export const Card = ({ title, to, buttonTitle, icon, imgeSrc = null, direction = 'rtl' }) => {
   if (imgeSrc)

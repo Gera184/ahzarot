@@ -1,7 +1,7 @@
 import React from 'react'
 import { CContainer, CRow, CCol } from '@coreui/react'
 
-export const Title = ({
+const Title = ({
   title = '',
   addShadow = false,
   size = 'display-1',

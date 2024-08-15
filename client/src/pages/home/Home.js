@@ -1,12 +1,11 @@
 import React from 'react'
-import Title from '../../../components/title/Title'
-import { Form } from '../../../components/form/Form'
+import { Form } from '../../components/index'
 import { CContainer, CRow, CCol, CImage, CCarousel, CCarouselItem } from '@coreui/react'
-import { Card } from '../../../components/card/Card'
-import arrow from '../../../assets/svg-icons/arrow.svg'
+import { Card } from '../../components/index'
+import arrow from '../../assets/svg-icons/arrow.svg'
+import { Title } from '../../components/index'
 
-export const Home = ({ homeData, direction }) => {
-  const { home } = homeData
+export const Home = ({ texts, direction }) => {
   const {
     cardsData,
     cardsButtonTitle,
@@ -18,15 +17,19 @@ export const Home = ({ homeData, direction }) => {
     customersRecommendSubTitle,
     customersRecommendContent,
     customersRecommendImges,
-  } = home
+  } = texts.home
 
   return (
     <CContainer fluid className="p-0">
       <CContainer fluid className="bg_background pb-3">
-        <Title title={home.title} addShadow={true} />
-        <Form formData={home.form} direction={direction} />
+        <Title title={texts?.home.title} addShadow={true} />
+        <Form formData={texts?.home.form} direction={direction} />
         <CContainer className="pt-5">
-          <Title title={home.subTitle} size="display-5" subtitle={home.subTitleText} />
+          <Title
+            title={texts?.home.subTitle}
+            size="display-5"
+            subtitle={texts?.home.subTitleText}
+          />
           <CRow className="justify-content-center">
             {cardsData.map((card) => (
               <CCol

@@ -4,7 +4,7 @@ import SimpleBar from 'simplebar-react'
 import 'simplebar-react/dist/simplebar.min.css'
 import { CBadge, CNavLink, CSidebarNav } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
-import { iconMap } from '../icons-mapper/IconsMapper'
+import { iconMap } from '../../utils/IconsMapper'
 
 export const AppSidebarNav = ({ items, language }) => {
   const direction = language === 'he' ? 'rtl' : 'ltr'

@@ -1,16 +1,16 @@
 import React, { Suspense, useEffect } from 'react'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useColorModes } from '@coreui/react'
 import './scss/style.scss'
-import { Loading } from './components/loading/Loading'
+import { Loading } from './components/index'
 
 // Containers
 const DefaultLayout = React.lazy(() => import('./layout/DefaultLayout'))
 
 // Pages
-const Page404 = React.lazy(() => import('./views/pages/page404/Page404'))
-const Page500 = React.lazy(() => import('./views/pages/page500/Page500'))
+const Page404 = React.lazy(() => import('./pages/page404/Page404'))
+const Page500 = React.lazy(() => import('./pages/page500/Page500'))
 
 const App = () => {
   const { isColorModeSet, setColorMode } = useColorModes('coreui-free-react-admin-template-theme')
@@ -32,7 +32,7 @@ const App = () => {
   }, [])
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Suspense fallback={<Loading />}>
         <Routes>
           <Route exact path="/404" name="Page 404" element={<Page404 />} />
@@ -40,7 +40,7 @@ const App = () => {
           <Route path="*" name="Home" element={<DefaultLayout />} />
         </Routes>
       </Suspense>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 

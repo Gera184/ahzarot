@@ -18,35 +18,35 @@
   {
     "component": "CNavTitle",
     "name": {
-      "en": "our services",
+      "en": "Our Services",
       "he": "השירותים שלנו"
     }
   },
   {
     "component": "CNavItem",
     "name": {
-      "en": "Funds from insurance companies",
-      "he": "כספים מחברות הביטוח"
+      "en": "Funds from Insurance Companies",
+      "he": "קרנות מחברות ביטוח"
     },
-    "to": "/theme/colors",
+    "to": "/funds-from-insurance-companies",
     "icon": "cilChartPie"
   },
   {
     "component": "CNavItem",
     "name": {
-      "en": "Life insurances",
-      "he": "ביטוחי חיים"
+      "en": "Life Insurances",
+      "he": "ביטוחים"
     },
-    "to": "/theme/life_insurances",
+    "to": "/life-insurances",
     "icon": "cilCursor"
   },
   {
     "component": "CNavItem",
     "name": {
       "en": "Loans",
-      "he": "הלוואות"
+      "he": "משיכות כספים"
     },
-    "to": "/theme/typography",
+    "to": "/loans",
     "icon": "cilCursor"
   },
   {
@@ -57,280 +57,39 @@
     }
   },
   {
-    "component": "CNavGroup",
+    "component": "CNavItem",
     "name": {
-      "en": "Tax Refund",
-      "he": "החזרי מס"
-    },
-    "to": "/base",
-    "icon": "cilDescription",
-    "items": [
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/accordion"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/breadcrumbs"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/cards"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/carousels"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/collapses"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/list-groups"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/navs"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/paginations"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/placeholders"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/popovers"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/progress"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/spinners"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/tables"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/tabs"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/base/tooltips"
-      }
-    ]
-  },
-  {
-    "component": "CNavGroup",
-    "name": {
-      "en": "Tax Refund",
-      "he": "החזרי מס"
-    },
-    "to": "/buttons",
-    "icon": "cilDrop",
-    "items": [
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/buttons/buttons"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/buttons/button-groups"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/buttons/dropdowns"
-      }
-    ]
-  },
-  {
-    "component": "CNavGroup",
-    "name": {
-      "en": "Tax Refund",
-      "he": "החזרי מס"
+      "en": "Pension Tax Exemption",
+      "he": "פטור ממס על הפנסיה"
     },
     "icon": "cilNotes",
-    "items": [
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/forms/form-control"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/forms/select"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/forms/checks-radios"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/forms/range"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/forms/input-group"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/forms/floating-labels"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/forms/layout"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/forms/validation"
-      }
-    ]
+    "to": "/pension-tax-exemption"
   },
   {
     "component": "CNavItem",
     "name": {
-      "en": "Tax Refund",
-      "he": "החזרי מס"
+      "en": "National Insurance Claims",
+      "he": "תביעות ביטוח לאומי"
     },
-    "to": "/charts",
-    "icon": "cilPencil"
-  },
-  {
-    "component": "CNavGroup",
-    "name": {
-      "en": "Tax Refund",
-      "he": "החזרי מס"
-    },
-    "icon": "cilPuzzle",
-    "items": [
-      {
-        "component": "CNavItem",
-        "name": {
-          "en": "Tax Refund",
-          "he": "החזרי מס"
-        },
-        "to": "/icons/coreui-icons",
-        "badge": { "color": "success", "text": { "en": "NEW", "he": "חדש" } }
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/icons/flags"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/icons/brands"
-      }
-    ]
-  },
-  {
-    "component": "CNavGroup",
-    "name": {
-      "en": "Tax Refund",
-      "he": "החזרי מס"
-    },
-    "icon": "cilSpeedometer",
-    "items": [
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/notifications/alerts"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/notifications/badges"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/notifications/modals"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/notifications/toasts"
-      }
-    ]
+    "icon": "cilNotes",
+    "to": "/national-insurance-claims"
   },
   {
     "component": "CNavItem",
     "name": {
-      "en": "Tax Refund",
-      "he": "החזרי מס"
+      "en": "Pension Fund Withdrawals",
+      "he": "משיכות כספים פנסיונים"
     },
-    "to": "/widgets",
-    "icon": "cilStar",
-    "badge": { "color": "info", "text": { "en": "NEW", "he": "חדש" } }
+    "icon": "cilNotes",
+    "to": "/pension-fund-withdrawals"
   },
   {
-    "component": "CNavTitle",
+    "component": "CNavItem",
     "name": {
-      "en": "Tax Refund",
-      "he": "החזרי מס"
-    }
-  },
-  {
-    "component": "CNavGroup",
-    "name": {
-      "en": "Tax Refund",
-      "he": "החזרי מס"
+      "en": "Lost Funds Check",
+      "he": "בדיקת כספים אבודים"
     },
-    "icon": "cilPuzzle",
-    "items": [
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/login"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/register"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/404"
-      },
-      {
-        "component": "CNavItem",
-        "name": { "en": "Tax Refund", "he": "החזרי מס" },
-        "to": "/500"
-      }
-    ]
+    "icon": "cilNotes",
+    "to": "/lost-funds-check"
   }
 ]

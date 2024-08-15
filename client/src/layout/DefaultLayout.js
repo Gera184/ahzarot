@@ -4,7 +4,7 @@ import useDataFetching from '../hooks/useDataFetching'
 import { Loading } from '../components/loading/Loading'
 import { convertAndUpdateNavItems } from '../utils/convertAndUpdateNavItems'
 import { useSelector } from 'react-redux'
-import { Error } from '../components/error/Error'
+import { Error } from '../components/index'
 
 const DefaultLayout = () => {
   const { isError, errorMessage, isLoading, routesData, navsData, textsData } = useDataFetching()
@@ -17,7 +17,7 @@ const DefaultLayout = () => {
   const formattedNavs = convertAndUpdateNavItems(navsData.navs)
   const selectedLanguageTexts = textsData.texts[language]
   const { routes } = routesData
- 
+
   return (
     <div>
       <AppSidebar navigation={formattedNavs} language={language} />

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import {
@@ -29,16 +29,16 @@ const AppHeader = ({ routes, texts, language }) => {
   const headerRef = useRef()
   const dispatch = useDispatch()
 
-  useEffect(() => {
-    document.addEventListener('scroll', () => {
-      headerRef.current &&
-        headerRef.current.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0)
-    })
+  // useEffect(() => {
+  //   document.addEventListener('scroll', () => {
+  //     headerRef.current &&
+  //       headerRef.current.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0)
+  //   })
 
-    return () => {
-      document.removeEventListener('scroll', () => {})
-    }
-  }, [])
+  //   return () => {
+  //     document.removeEventListener('scroll', () => {})
+  //   }
+  // }, [])
 
   return (
     <CHeader position="sticky" className="mb-4 p-0" ref={headerRef}>
